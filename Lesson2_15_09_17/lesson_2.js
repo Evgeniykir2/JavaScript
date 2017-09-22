@@ -14,7 +14,7 @@ while (cicle) {
             document.write("Добро пожаловать. Чёрный Властелин.");
             cicle = false;
         } else {
-            document.write("Пароль неверный.");
+            
             alert("Пароль неверный.");
 
         }
