@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Lesson 5</title>
+    <style>
+        body {
+            text-align: left;
+            padding-top: 10%;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+		#output{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin: 0 auto;
+			width:600px;
+			height: 100%;
+			background-color: #ccc;
+			border-radius: 5px;
+		}
+		.listClass {
+			padding-left: 0;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.listClass li:first-child{
+			margin-top: 1em;
+		}
+		.itemListClass{
+			margin: 1px auto;
+			width: 100%;
+			padding:10px 0 10px 20px;
+			background: linear-gradient(180deg, #888, #aaa 20%,#ccc 50%, #aaa 80%, #888 100%);
+			color: #fff;
+
+			
+		}
+    </style>
+</head>
+
+<body>
+	<div id="output"></div> 
+    <script src="main.js"></script>
+</body>
+
+</html>
