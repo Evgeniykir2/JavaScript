@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array map</title>
+	<meta charset="utf-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready( function(){
+		let result2 ;
+			function chooseElem(ind, el){
+				if(ind == 5 || ind == 6){
+					if( ind == 5 ){
+					el.innerHTML = 'Суббота (' + (ind+1) + ') День недели';
+					
+					}else{
+					el.innerHTML = 'Воскресенье (' + (ind+1) + ') День недели';
+					}
+					return el;
+				}
+				
+			}
+			
+			setTimeout(
+				function(){
+				 result2 = $('#div1').children().clone().map(chooseElem);
+				$('#div1').after(result2);
+				console.log(result2);
+				}, 1000
+			);
+		} );
+	</script>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<script src="array_map.js" type="text/javascript"></script>
+	</body>
+</html>
