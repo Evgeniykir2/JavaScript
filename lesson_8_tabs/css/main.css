@@ -131,7 +131,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 20px; }
+    margin: 10px; }
   .content__center--right {
     -webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -310,3 +310,19 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+.pie-title-center {
+  display: block;
+  position: relative;
+  text-align: center;
+}
+.pie-value {
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  height: 30px;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: 0px;
+  line-height: 30px;
+}

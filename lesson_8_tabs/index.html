@@ -8,6 +8,7 @@
     <title>Tabs</title>
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/jquery-3.2.0.min.js"></script>
+	
     <script src="./js/main.js"></script>
 </head>
 
@@ -50,9 +51,14 @@
                             <p class="top__left--head">FarCry 4</p>
                             <p class="top__left--content">First Released Nov 17, 2014</p>
                         </div>
-                        <div class="top__right">
+						<div id="example" class="pie-title-center" data-percent="78%">
+							<span class="pie-value"></span>
+						</div>
+                        <!--
+						<div class="top__right">
                             <img src="./img/Ellipse-5-copy.png" alt="" class="rating">
                         </div>
+						-->
                     </div>
                     <div class="center">
                         <p class="center--content">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling under the regime of a despotic self-appointed king.
@@ -70,7 +76,9 @@
                 </div>
             </div>
             <div id="secondblock" class="  clheight2">
-                <img src="./img/Ellipse-5-copy.png" alt="" class="rating">
+                <div id="example2" class="pie-title-center" data-percent="78%">
+					<span class="pie-value"></span>
+				</div>
                 <span>Ratings</span>
             </div>
             <div id="thirdblock" class="tabright clheight ">
@@ -79,6 +87,8 @@
             </div>
         </div>
     </section>
+	 <script src="./js/pie-chart.js"></script>
+    <script src="./js/main_2.js"></script>
 </body>
 
 </html>
