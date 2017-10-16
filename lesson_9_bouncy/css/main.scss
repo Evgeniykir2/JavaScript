@@ -1,0 +1,30 @@
+/*@import './reset.css';      */
+
+@import './parts/_fonts.scss';
+@import './parts/_reset.scss';
+@import './parts/_colors.scss';
+@import './parts/_animation.scss';
+@import './parts/_mixin.scss';
+@import './sections/_header.scss';
+@import './sections/_photos.scss';
+@import './sections/_theteam.scss';
+@import './sections/_letstalk.scss';
+@import './sections/_testimunials.scss';
+@import './sections/_contactus.scss';
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.sectiopn {
+    max-width: 1366PX;
+    max-height: 4707px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}

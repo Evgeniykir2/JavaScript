@@ -1,0 +1,35 @@
+.letstalk {
+    max-width: 1366px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-position: 0 -410px;
+    background-size: cover;
+    background-image: url('./../img/Layer-1043.png');
+    padding: 70px 10% 90px;
+    @include display-flex(column,
+    center,
+    center);
+    &--header {
+        color: $white;
+        font-family: "OpenSans", sans-serif;
+        font-size: 20px;
+    }
+    &--button .letstalkbutton {
+        margin-top: 30px;
+        color: $white;
+        font-family: "OpenSans", sans-serif;
+        font-size: 16px;
+        width: 140px;
+        height: 36px;
+        border-radius: 18px;
+        border: 1px solid $white;
+        background: transparent;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        outline: 0;
+        &:hover {
+            color: #000;
+            background-color: $white;
+        }
+    }
+}

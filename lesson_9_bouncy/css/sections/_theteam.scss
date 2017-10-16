@@ -1,0 +1,96 @@
+.theteam {
+    max-width: 1366px;
+    height: 100vv;
+    max-height: 900px;
+    background-color: $white;
+    padding: 70px 10% 90px;
+    @include display-flex(column, flex-start, center);
+    &__header {
+        @include display-flex(column, flex-start, center);
+        margin-top: 80px;
+        &--head {
+            color: #333b46;
+            font-size: 20px;
+        }
+        &--description {
+            margin-top: 40px;
+            color: #81858d;
+            font-size: 14px;
+            width: 80%;
+            line-height: 1.4;
+            text-align: center;
+        }
+    }
+    &__content {
+        &--img {
+            width: 20%;
+        }
+        &--description {
+            width: 60%;
+            @include display-flex(column, flex-start, flex-end);
+            &-top {
+                margin-top: 25px;
+                @include display-flex(column, flex-start, flex-end);
+                border-right: 3px solid #19bd9a;
+                padding-right: 45px;
+            }
+            &-desc {
+                margin-top: 30px;
+                width: 60%;
+                padding-right: 45px;
+                text-align: right;
+                line-height: 1.6;
+                color: #81858d;
+                font-family: "OpenSans", sans-serif;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.single-slide {
+    margin-top: 50px;
+    max-width: 1030px;
+    /*border: 1px solid #ccc;      */
+}
+
+.description-top {
+    &--header {
+        color: #464646;
+        font-family: "OpenSans", sans-serif;
+        font-size: 20px;
+    }
+    &--description {
+        margin-top: 12px;
+        color: #81858d;
+        font-family: "OpenSans", sans-serif;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-style: oblique;
+    }
+}
+
+.slick-dots li {
+    width: 14px;
+    height: 14px;
+}
+
+.slick-dots li button {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #19bd9a;
+    border-radius: 7px;
+    transform: translateY( -2px) translateX(-2px);
+}
+
+.slick-dots li button:before {
+    content: '';
+}
+
+.slick-dots li.slick-active {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #19bd9a;
+    border-radius: 6px;
+    background-color: #19bd9a;
+}

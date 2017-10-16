@@ -1,0 +1,58 @@
+.testimunials {
+    max-width: 1366px;
+    height: 650px;
+    background-color: rgba(243, 243, 243, 1.0);
+    padding: 6% 7% 7%;
+    @include display-flex(column, center, center);
+    &--header {
+        color: #333b46;
+        font-family: 'OpenSans', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    &--description {
+        width: 40%;
+        margin-top: 40px;
+        color: #81858d;
+        font-family: "OpenSans", sans-serif;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.4;
+    }
+    &__content {
+        padding: 4% 7% 7%;
+        margin-top: 60px;
+        max-width: 1170px;
+        height: 320px;
+        background-color: $white;
+        &--item {
+            &-text {
+                width: 70%;
+                color: #81858d;
+                font-family: "OpenSans", sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+            &-img {
+                width: 20%;
+            }
+        }
+    }
+}
+
+.testimunials__content--item.slick-slide {
+    @include display-flex(row, space-between, center);
+}
+
+.subscript {
+    margin-top: 30px;
+    color: #19bd99;
+    font-family: "OpenSans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    &--desc {
+        color: #464646;
+        font-family: "OpenSans", sans-serif;
+        font-size: 12px;
+    }
+}

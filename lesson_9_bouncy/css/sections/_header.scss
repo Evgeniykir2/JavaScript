@@ -1,0 +1,86 @@
+.header {
+    padding: 40px 100px 120px;
+    position: relative;
+    width: 100vw;
+    max-width: 1366px;
+    height: 100vh;
+    max-height: 737px;
+    text-decoration: none;
+    @include display-flex(column, flex-start, center);
+    background-image: url('./../img/Layer-22.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    &__top {
+        width: 100%;
+        @include display-flex(row,
+        space-between,
+        center);
+        &--logo {}
+        &--navigation {
+            @include display-flex(row,
+            space-between,
+            center);
+            &__item {
+                margin-left: 10px;
+                text-decoration: none;
+                color: $white;
+                font-family: 'Open Sans', sans-serif;
+                border: 2px solid transparent;
+                border-radius: 18px;
+                padding: 10px 22px;
+                font-size: 16px;
+                transition: ease-in-out 0.4s;
+            }
+            &__item:first-child {
+                margin-left: 0;
+            }
+            &__item:hover {
+                border: 2px solid $white;
+                border-radius: 18px;
+            }
+        }
+    }
+    &__content {
+        @include display-flex(column,
+        space-around,
+        center);
+        color: $white;
+        margin-top: 200px;
+        &--head,
+        &--description {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 36px;
+            text-transform: uppercase;
+        }
+        &--description {
+            margin-top: 40px;
+            font-size: 16px;
+            text-transform: none;
+            ;
+        }
+    }
+    &--pointer {
+        display: block;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: $greenasule;
+        border-radius: 50%;
+        transform: translate(-50% -50%);
+    }
+    &-pointer--arrow_box {
+        display: inline-block;
+        position: relative;
+        border-right: 2px solid $graylightly;
+        border-bottom: 2px solid $graylightly;
+        width: 30%;
+        height: 30%;
+        top: 10%;
+        left: 35%;
+        transform: rotate(45deg);
+        animation: moving_bottom_top infinite ease-in-out;
+        animation-duration: 4s;
+    }
+}

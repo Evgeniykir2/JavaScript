@@ -1,0 +1,55 @@
+@keyframes popular_animation {
+    0% {
+        opacity: 1;
+        color: $white;
+    }
+    10% {
+        color: #ff0000;
+    }
+    20% {
+        color: #ff8800;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    30% {
+        color: #88ff00;
+    }
+    40% {
+        color: #00ff88;
+    }
+    50% {
+        opacity: 0.1;
+        color: #0088ff;
+    }
+    60% {
+        color: #8800ff;
+    }
+    75% {
+        opacity: 0.75;
+    }
+    80% {
+        color: #ff0088;
+    }
+    90% {
+        color: #ff00ff;
+    }
+    100% {
+        opacity: 1;
+        color: $white;
+    }
+}
+
+@keyframes moving_bottom_top {
+    0% {
+        top: 10%;
+    }
+    50% {
+        top: 50%;
+        border-bottom-color: $white;
+        border-right-color: $white;
+    }
+    100% {
+        top: 10%;
+    }
+}
